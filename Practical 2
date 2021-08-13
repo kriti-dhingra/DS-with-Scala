@@ -1,4 +1,4 @@
-object Sample {
+object Calculator {
     def main(args: Array[String]) {  
         var ch:Char=0
         var num1:Int=0
