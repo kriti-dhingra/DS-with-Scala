@@ -1,0 +1,48 @@
+/* Name: kriti dhingra (1918430, 190121293)
+** Section: K(B. Tech), Semester: 5
+*/
+
+/*Write a Scala program to implement a basic calculator with add, subtract, multiply, divide features by using 
+**Methods, Class, Object and Fields in Scala.
+*/
+
+class Calculator(cx:Int, cy:Int){
+  var x:Int=cx
+  var y:Int=cy
+
+  def add():Int={   // a method of `Calculator` to add two numbers
+    var sum:Int=0
+    sum=x+y
+    return (sum)
+  }
+
+  def sub():Int={   // a method of `Calculator` to subtract two numbers
+    var sub:Int=0
+    sub=x- y
+    return (sub)
+  }
+
+  def mul():Int={   // a method of `Calculator` to multiply two numbers
+    var mul:Int=0
+    mul=x*y
+    return (mul)
+  }
+
+  def div():Float={ // a method of `Calculator` to perform divion
+    var div:Int=0
+    div=x/y
+    return (div)
+  }
+
+}
+
+
+object calculate{     					// Creating a object
+  def main(args:Array[String]){     			//defining a `main` function to run code
+    val calc = new Calculator(10,20) 			//Creating an instance of `Calculator`
+    println("Addition: "+calc.add())  			//calling `add` method and prining result
+    println("Subtraction: "+calc.sub()) 		//calling `sub` method and prining result
+    println("Multiplication: "+calc.mul())  		//calling `mul` method and prining result
+    println("Division: "+calc.div())  			//calling `div` method and prining result
+  }
+}
